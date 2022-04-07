@@ -139,6 +139,7 @@ function* validationMasercodeFlow(action) {
         yield put({ type: SET_BOX_PROP, key: 'message', value: 'Unlocking...' });
         yield delay(3000);
         yield put({ type: SET_BOX_PROP, key: 'message', value: 'Error' });
+        playSound("Error");
         yield delay(1500);
         yield put({ type: SET_BOX_PROP, key: 'message', value: 'Closed' });
         yield delay(1500);
