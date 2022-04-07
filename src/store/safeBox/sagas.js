@@ -130,6 +130,7 @@ function* validationMasercodeFlow(action) {
         yield localStorage.removeItem('stored_code');
         yield put({ type: SET_BOX_PROP, key: 'numbers', value: [] });
         yield put({ type: SET_BOX_PROP, key: 'message', value: 'Opened' });
+        playSound("Opened");
         yield delay(1500);
         yield put({ type: SET_BOX_PROP, key: 'message', value: 'Ready' });
         yield put({ type: SET_BOX_PROP, key: 'processing', value: false });
