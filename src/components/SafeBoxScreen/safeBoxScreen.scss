@@ -1,0 +1,36 @@
+@import '../../styles/common.scss';
+
+.safe__box__screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 145px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid $black;
+  border-radius: 5px;
+  overflow: hidden;
+  overflow-x: auto;
+  transition: all .2s ease-in;
+
+  h4 {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: 'RobotoMono-Medium';
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  p {
+    flex: 0 0 auto;
+  }
+
+  h4, p {
+    color: $screen-text;
+  }
+}
+  
+  

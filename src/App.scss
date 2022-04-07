@@ -1,0 +1,50 @@
+@import 'styles/common';
+
+@font-face {
+  font-family: 'RobotoMono-Normal';
+  src: url(assets/fonts/roboto/RobotoMono-Regular.ttf) format('truetype');
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoMono-Medium';
+  src: url(assets/fonts/roboto/RobotoMono-Medium.ttf) format('truetype');
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'RobotoMono-Normal';
+  background: $background;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// reusable classes
+
+.screen__on {
+  background: $screen-on;
+}
+
+.screen__off {
+  background: $screen-off;
+}
+
+.smaller__text {
+  font-size: 1.5rem !important;
+}

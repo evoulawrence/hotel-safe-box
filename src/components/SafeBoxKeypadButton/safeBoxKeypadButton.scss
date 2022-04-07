@@ -1,0 +1,71 @@
+@import '../../styles/common.scss';
+
+$content1: "\25b2";
+$content2: "\25c0";
+$content3: "\25b6";
+$content4: "\25bc";
+$content5: "A";
+$content6: "B";
+
+.safe__box {
+  &__keypad__button {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $button;
+    font-size: 3rem;
+    color: $button-text;
+    border: 1px solid $black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px $box-shadow-color;
+    -webkit-box-shadow: 0px 3px 10px $box-shadow-color;
+    cursor: pointer;
+    position: relative;
+
+    &[aria-disabled='true'] {
+      pointer-events: none;
+    }
+
+    &[aria-disabled='false'] {
+      pointer-events: auto;
+    }
+
+    &:nth-child(2n):after {
+      content: "";
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #434343;
+      position: absolute;
+      bottom: 2px;
+      right: 3px;
+    }
+
+    &:nth-child(2):after {
+      content: $content1;
+    }
+
+    &:nth-child(4):after {
+      content: $content2;
+    }
+
+    &:nth-child(6):after {
+      content: $content3;
+    }
+
+    &:nth-child(8):after {
+      content: $content4;
+    }
+
+    &:nth-child(10):after {
+      content: $content5;
+    }
+
+    &:nth-child(12):after {
+      content: $content6;
+    }
+    
+  }
+    
+}
